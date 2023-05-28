@@ -1,0 +1,21 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "cmake",
+            "command": "cd build && cmake .. -DCMAKE_BUILD_TYPE=Debug",
+            "detail": "CMake 生成 Makefile",
+            "args": [],
+            "problemMatcher": "$gcc"
+        },
+        {
+            "type": "shell",
+            "label": "build",
+            "command": "cd build && make -j8",
+            "detail": "编译项目",
+            "args": [],
+            "problemMatcher": "$gcc"
+        },
+    ],
+    "version": "2.0.0"
+}
